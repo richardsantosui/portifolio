@@ -10,7 +10,7 @@
     --text-main: rgb(27, 26, 26);
 }
 
-
+/* 1. RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-
+/* 2. CABEÇALHO E MENU */
 header {
     background-color: var(--bg-dark);
     color: #4da6ff; 
@@ -69,6 +69,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* 3. FOTO DE PERFIL (Caso decida usar no futuro) */
 .foto-perfil {
     width: 180px;
     height: 180px;
@@ -79,7 +80,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* 4. SEÇÕES */
 section {
     max-width: 800px;
     margin: 40px auto;
@@ -95,7 +96,7 @@ h1, h2, h3 {
     color: var(--primary);
 }
 
-
+/* 5. PROJETOS */
 .project {
     background-color: var(--secondary);
     padding: 20px;
@@ -126,7 +127,7 @@ h1, h2, h3 {
     color: black;
 }
 
-
+/* 6. MODO ESCURO */
 .modo-escuro {
     background-color: #121212;
     color: #ffffff;
@@ -141,6 +142,7 @@ h1, h2, h3 {
     color: #bb86fc;
 }
 
+/* 7. BOTÃO DE TEMA */
 #botao-tema {
     background-color: royalblue;
     color: white;
@@ -155,10 +157,10 @@ h1, h2, h3 {
 #botao-tema:hover {
     background-color: skyblue;
     color: black;
- 
+}
 
+/* 8. AJUSTES PARA CELULAR (RESPONSIVO) */
 @media (max-width: 600px) {
- 
     nav {
         flex-direction: column;
         gap: 15px;
@@ -178,7 +180,7 @@ h1, h2, h3 {
 
     section {
         width: 95%;
-        margin: 20px auto;
+        margin: 15px auto;
         padding: 20px;
     }
 
@@ -189,10 +191,10 @@ h1, h2, h3 {
     h2 {
         font-size: 1.2rem;
     }
+
     .btn-curriculo {
         display: block;
         text-align: center;
         width: 100%;
     }
-}
 }
